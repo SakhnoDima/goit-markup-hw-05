@@ -53,18 +53,9 @@ span {
 .flax-header.list .link:focus {
   color: var(--pressed-color);
 }
-/* .logo.link.nav-marg {            убрал лишнее
-  padding: 24px;
-} */
 .flax-nav .logo.link {
   margin-right: 76px;
 }
-/* .flax-nav .nav-marg + .nav-marg {
-  margin-left: 76px;
-} */
-/* .flax .adres-marg + .adres-marg {
-  margin-left: 40px;
-} */
 .flax-header .link {
   display: block;
   padding-top: 24px;
@@ -90,6 +81,7 @@ span {
 .adres-nav .link:focus {
   color: var(--pressed-color);
 }
+/* SECTION HEROU */
 .section-herou {
   text-align: center;
   height: 600px;
@@ -105,6 +97,10 @@ span {
   letter-spacing: 0.02em;
   color: #ffffff;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/* SECTION-ONE */
+.section-herou {
+  background-image: url(/images/people-office\ 1.jpg);
 }
 .visually-hidden {
   position: absolute;
@@ -155,7 +151,11 @@ span {
 }
 .one-title {
   margin-bottom: 8px;
-  margin-top: 0;
+  margin-top: 8px;
+}
+.contaier-one-title img {
+  background: #f4f4fd;
+  border-radius: 4px;
 }
 .two-title {
   margin-bottom: 72px;
@@ -197,6 +197,14 @@ span {
 .three-cards {
   text-align: center;
   padding: 32px 16px;
+}
+.social {
+  display: flex;
+  gap: 24px;
+}
+.social-img {
+  width: 40px;
+  height: 40px;
 }
 
 /* Flex инструкции */
