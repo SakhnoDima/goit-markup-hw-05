@@ -241,9 +241,9 @@ span {
   width: calc((100% - 72px) / 4);
   margin-right: 24px;
   background-color: #ffffff;
-  box-shadow: 0px 2px 1px 0px #2e2f4214;
-  box-shadow: 0px 1px 1px 0px #2e2f4229;
   box-shadow: 0px 1px 6px 0px #2e2f4214;
+  box-shadow: 0px 1px 1px 0px #2e2f4229;
+  box-shadow: 0px 2px 1px 0px #2e2f4214;
 }
 .three-title-background:hover,
 .three-title-background:focus {
@@ -263,7 +263,8 @@ span {
   display: flex;
   align-items: center;
   list-style: none;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 24px;
   padding-top: 8px;
   padding-bottom: 0px;
   padding-left: 0px;
