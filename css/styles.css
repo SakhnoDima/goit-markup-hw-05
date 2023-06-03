@@ -311,7 +311,7 @@ span {
 .customer-li .link:hover,
 .customer-li .link:focus {
   border-color: #404bbf;
-  fill: #404bbf;
+  color: #404bbf;
 }
 .customer-web {
   fill: currentColor;
@@ -326,6 +326,7 @@ span {
   justify-content: center;
 }
 .customer-li {
+  width: calc((100% - 120px) / 6);
   height: 88px;
 }
 /* .customer-flex .customer-li:not(:last-child) {
