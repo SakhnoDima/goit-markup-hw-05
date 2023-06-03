@@ -125,6 +125,15 @@ span {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.div-dignity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: var(--unpresed-color);
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
 .text-section-one {
   margin-top: 0;
   margin-bottom: 0;
@@ -135,11 +144,6 @@ span {
 .contaier-one-title {
   margin-right: 24px;
   width: 100%;
-}
-.dignity {
-  width: 264px;
-  height: 112px;
-  background-color: var(--unpresed-color);
 }
 .dignity:hover,
 .dignity:focus {
@@ -198,7 +202,7 @@ span {
 }
 .one-title {
   margin-bottom: 8px;
-  margin-top: 8px;
+  margin-top: 0px;
 }
 .contaier-one-title img {
   background: #f4f4fd;
