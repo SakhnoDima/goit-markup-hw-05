@@ -281,9 +281,6 @@ span {
 .social-link:focus {
   background-color: var(--pressed-color);
 }
-.social-flex li {
-  height: 40px;
-}
 .social.link {
   fill: var(--unpresed-color);
 }
@@ -309,7 +306,7 @@ span {
   border-color: #404bbf;
   color: #404bbf;
 }
-.customer-web.link {
+.customer-web {
   fill: currentColor;
 }
 .customer-flex {
@@ -498,6 +495,7 @@ span {
   list-style: none;
   gap: 16px;
   padding: 0px;
+  margin: 0px;
 }
 .social-list {
   width: 40px;
