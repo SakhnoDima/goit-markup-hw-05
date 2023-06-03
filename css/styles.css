@@ -309,13 +309,15 @@ span {
   justify-content: center;
   color: #8e8f99;
 }
+.customer-web {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
 .customer-li .link:hover,
 .customer-li .link:focus {
   border-color: #404bbf;
   color: #404bbf;
-}
-.customer-web {
-  fill: currentColor;
 }
 .customer-flex {
   display: flex;
