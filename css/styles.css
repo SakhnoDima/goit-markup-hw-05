@@ -306,12 +306,14 @@ span {
   align-items: center;
   justify-content: center;
   color: #8e8f99;
-  fill: currentColor;
 }
 .customer-li .link:hover,
 .customer-li .link:focus {
   border-color: #404bbf;
   color: #404bbf;
+}
+.customer-web.link {
+  fill: currentColor;
 }
 .customer-flex {
   display: flex;
@@ -440,6 +442,7 @@ span {
 }
 .footer.footer-botton .container {
   display: flex;
+  align-items: baseline;
 }
 .footer-logo {
   color: #f4f4fd;
@@ -480,8 +483,8 @@ span {
 .container-logo {
   margin-right: 120px;
 }
-.container-social-media p {
-  margin: 0px;
+.container-social-media .p-social {
+  margin: 0px 0px 16px 0px;
   font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
@@ -491,7 +494,30 @@ span {
   color: var(--primary-bg-color);
 }
 .container-social-media .social-flex {
-  margin: 16px 0px 0px 0px;
+  margin: 0px;
+}
+.social-footer {
+  display: flex;
+  list-style: none;
+  gap: 16px;
+  padding: 0px;
+}
+.social-list {
+  width: 40px;
+  height: 40px;
+}
+.social-footer .social-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-footer .social-link:hover,
+.social-footer .social-link:focus {
+  background-color: #31d0aa;
 }
 /* <---  portfolio ---> */
 .logo-span {
