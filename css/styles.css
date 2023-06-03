@@ -313,9 +313,6 @@ span {
   border-color: #404bbf;
   color: #404bbf;
 }
-.customer-web {
-  fill: currentColor;
-}
 .customer-flex {
   display: flex;
   align-items: center;
@@ -329,9 +326,7 @@ span {
   width: calc((100% - 120px) / 6);
   height: 88px;
 }
-/* .customer-flex .customer-li:not(:last-child) {
-  margin-right: 24px;
-} */
+
 /* Flex инструкции */
 .container.header {
   padding: 0 15px;
@@ -439,9 +434,12 @@ span {
   letter-spacing: 0.04em;
   border-radius: 4px;
 }
-/* footer */
+/* <---  footer  ---> */
 .footer {
   background-color: var(--title-text-color);
+}
+.footer.footer-botton .container {
+  display: flex;
 }
 .footer-logo {
   color: #f4f4fd;
@@ -473,18 +471,16 @@ span {
   letter-spacing: 0.02em;
   width: 264px;
 }
-.footer.footer-botton .container {
-  display: flex;
-}
+
 .container-social-media {
   height: 80px;
   width: 208px;
   border-radius: 0px;
 }
 .container-logo {
-  padding-right: 120px;
+  margin-right: 120px;
 }
-.container-social-media h2 {
+.container-social-media p {
   margin: 0px;
   font-family: Roboto;
   font-size: 16px;
@@ -497,7 +493,7 @@ span {
 .container-social-media .social-flex {
   margin: 16px 0px 0px 0px;
 }
-/* portfolio */
+/* <---  portfolio ---> */
 .logo-span {
   color: var(--title-text-color);
 }
