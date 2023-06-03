@@ -269,7 +269,6 @@ span {
   padding-bottom: 0px;
   padding-left: 0px;
 }
-
 .social-link {
   width: 40px;
   height: 40px;
@@ -277,9 +276,17 @@ span {
   border-radius: 50%;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--pressed-color);
 }
 .social-flex li {
   height: 40px;
+}
+.social.link {
+  fill: var(--unpresed-color);
 }
 /*  <---  CUSTOMER  ---> */
 .customer {
