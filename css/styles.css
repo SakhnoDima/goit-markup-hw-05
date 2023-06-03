@@ -45,6 +45,7 @@ span {
 }
 .button-line {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 4px 4px 0px #00000040;
 }
 .flax-header .link {
   color: var(--title-text-color);
@@ -95,6 +96,9 @@ span {
     ),
     url(/images/people-office1.jpg);
   background-size: cover;
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .herou-title {
   max-width: 496px;
