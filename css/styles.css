@@ -99,6 +99,8 @@ span {
   max-width: 1440px;
   background-repeat: no-repeat;
   background-position: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .herou-title {
   max-width: 496px;
