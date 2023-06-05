@@ -77,8 +77,14 @@ span {
 
   transform: translate(-50%, -50%);
   border-radius: 4px;
-  background-color: #404bbf;
+  background-color: #e7e7ee;
 }
+
+.modal-icon {
+  background-color: var(--primary-color);
+  fill: var(--primary-bg-color);
+}
+
 /* ----------------------------------------- */
 .flax-header .link {
   color: var(--title-text-color);
@@ -293,12 +299,18 @@ span {
   box-shadow: 0px 4px 4px 0px #00000040;
   cursor: pointer;
 }
-
+.customers {
+  padding: 120px 0;
+}
+.four-title {
+  margin-bottom: 72px;
+}
 .three-cards {
   text-align: center;
   padding: 32px 16px;
 }
 /* SOCIAL */
+
 .social-flex {
   display: flex;
   align-items: center;
@@ -317,20 +329,11 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
+  fill: var(--unpresed-color);
 }
 .social-link:hover,
 .social-link:focus {
   background-color: var(--pressed-color);
-}
-.social.link {
-  fill: var(--unpresed-color);
-}
-/*  <---  CUSTOMER  ---> */
-.customers {
-  padding: 120px 0;
-}
-.four-title {
-  margin-bottom: 72px;
 }
 .customer-li .link {
   width: 100%;
@@ -609,22 +612,25 @@ span {
 .cards {
   width: calc((100% - 48px) / 3);
 }
+.text-card {
+  color: var(--primary-bg-color);
+}
 .thumbs {
   position: relative;
   overflow: hidden;
 }
 .overlay {
   position: absolute;
+
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--primary-color);
-  /* смещаем */
   transform: translateY(+100%);
   transition: transform 250ms ease;
+  background-color: var(--primary-color);
 }
-.thumbs:hover {
+.thumbs:hover .overlay {
   transform: translateY(0);
 }
 .desk.list .cards:hover {
