@@ -656,7 +656,8 @@ span {
   transition-property: box-shadow;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.desk.list .cards:hover {
+.desk.list .cards:hover,
+.desk.list .cards:focus {
   box-shadow: 0px 2px 1px 0px #2e2f4214, 0px 1px 1px 0px #2e2f4229,
     0px 1px 6px 0px #2e2f4214;
 }
