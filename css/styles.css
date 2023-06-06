@@ -63,13 +63,17 @@ span {
 }
 /* <--  активное окно  --> */
 .li-head .link::after {
-  position: absolute;
-  bottom: 0;
-  content: " ";
+  content: "";
   display: block;
   width: 100%;
-  height: 5px;
-  background-color: #4d5ae5;
+  height: 4px;
+
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+
+  border-radius: 2px;
+  background-color: #404bbf;
 }
 
 .flax-nav .logo.link {
