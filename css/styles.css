@@ -57,11 +57,11 @@ span {
   color: var(--title-text-color);
   font-weight: 500;
 }
-.flax-header.list .link:hover,
-.flax-header.list .link:focus {
+.flax-header.list .link:hover::after,
+.flax-header.list .link:focus::after {
   color: var(--pressed-color);
 }
-/* <--  активное окно  --> */
+/* <--  ПСЕВДОЭЛЕМЕНТ  --> */
 .li-head .link::after {
   content: "";
   display: block;
@@ -71,16 +71,22 @@ span {
   position: absolute;
   bottom: -1px;
   left: 0;
-
+  transform: scaleX(0);
   border-radius: 2px;
-  background-color: #404bbf;
+  background-color: var(--pressed-color);
+  /*  <---инструкции переходов--->  */
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.li-head .active::after {
+  transform: scaleX(1);
+}
 .flax-nav .logo.link {
   margin-right: 76px;
 }
 .flax-header .link {
-  /* color: #404bbf; */
+  /* color: #404bbf;    <----         непонятная ошибка!!!*/
 
   position: relative;
   display: block;
