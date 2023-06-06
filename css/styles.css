@@ -62,15 +62,21 @@ span {
   color: var(--pressed-color);
 }
 /* <--  активное окно  --> */
-.flax-header.list .link:active ::after,
-.flax-header.list .link:active ::after {
-  border-bottom: 2px solid red;
+.flax-header.list .link:active::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  content: " ";
+  border-bottom: 2px solid var(--pressed-color);
 }
 
 .flax-nav .logo.link {
   margin-right: 76px;
 }
 .flax-header .link {
+  position: relative;
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -696,17 +702,25 @@ h2.title-text {
 
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
 
   min-height: 584px;
   min-width: 408px;
 
-  transform: translate(-50%, -50%);
   border-radius: 4px;
-  background-color: #e7e7ee;
+  background-color: #fcfcfc;
+  box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 3px 0px #0000001f,
+    0px 1px 1px 0px #00000024;
 }
 
 .modal-icon {
   background-color: var(--primary-color);
   fill: var(--primary-bg-color);
 }
+.modal-bt {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+}
+
 /* ----------------------------------------- */
