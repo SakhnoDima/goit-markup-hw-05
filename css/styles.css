@@ -53,39 +53,6 @@ span {
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
-/*  <----    модальное окно  ---->  */
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(255, 165, 0, 0.5);
-}
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-.modal {
-  position: absolute;
-
-  top: 50%;
-  left: 50%;
-
-  min-height: 584px;
-  min-width: 408px;
-
-  transform: translate(-50%, -50%);
-  border-radius: 4px;
-  background-color: #e7e7ee;
-}
-
-.modal-icon {
-  background-color: var(--primary-color);
-  fill: var(--primary-bg-color);
-}
-
-/* ----------------------------------------- */
 .flax-header .link {
   color: var(--title-text-color);
   font-weight: 500;
@@ -94,6 +61,12 @@ span {
 .flax-header.list .link:focus {
   color: var(--pressed-color);
 }
+/* <--  активное окно  --> */
+.flax-header.list .link:active ::after,
+.flax-header.list .link:active ::after {
+  border-bottom: 2px solid red;
+}
+
 .flax-nav .logo.link {
   margin-right: 76px;
 }
@@ -101,6 +74,10 @@ span {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
+  /*  <---инструкции переходов--->  */
+  transition-duration: 250ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .flax.list .link.adres {
   display: block;
@@ -109,6 +86,10 @@ span {
 }
 .adres-nav {
   font-style: normal;
+  /*  <---инструкции переходов--->  */
+  transition-duration: 250ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .adres-nav .list .link {
   color: var(--text-color);
@@ -187,6 +168,10 @@ span {
 .dignity {
   width: 100%;
   height: 100%;
+  /*  <---инструкции переходов--->  */
+  transition-duration: 250ms;
+  transition-property: box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .dignity:hover,
 .dignity:focus {
@@ -290,13 +275,15 @@ span {
   background-color: #ffffff;
   box-shadow: 0px 1px 6px 0px #2e2f4214, 0px 1px 1px 0px #2e2f4229,
     0px 2px 1px 0px #2e2f4214;
+  /*  <---инструкции переходов--->  */
+  transition-duration: 250ms;
+  transition-property: box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .three-title-background:hover,
 .three-title-background:focus {
-  box-shadow: 0px 2px 1px 0px #2e2f4214;
-  box-shadow: 0px 1px 1px 0px #2e2f4229;
-  box-shadow: 0px 4px 4px 0px #00000040;
-  box-shadow: 0px 4px 4px 0px #00000040;
+  box-shadow: 0px 2px 1px 0px #2e2f4214, 0px 1px 1px 0px #2e2f4229,
+    0px 4px 4px 0px #00000040, 0px 4px 4px 0px #00000040;
   cursor: pointer;
 }
 .customers {
@@ -330,7 +317,12 @@ span {
   align-items: center;
   justify-content: center;
   fill: var(--unpresed-color);
+  /*  <---инструкции переходов--->  */
+  transition-duration: 250ms;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .social-link:hover,
 .social-link:focus {
   background-color: var(--pressed-color);
@@ -344,6 +336,10 @@ span {
   align-items: center;
   justify-content: center;
   color: #8e8f99;
+  /*  <---инструкции переходов--->  */
+  transition-duration: 250ms;
+  transition-property: color, border-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customer-web {
   width: 100%;
@@ -429,12 +425,7 @@ span {
 .prof-but:last-child {
   margin-right: 0px;
 }
-.desk.list {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
-}
+
 /*  */
 .herou-title {
   font-size: 56px;
@@ -459,6 +450,10 @@ span {
   line-height: 1.5;
   letter-spacing: 0.04em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  /*  <---инструкции переходов--->  */
+  transition-duration: 250ms;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .herou-button:hover,
 .herou-button:focus {
@@ -555,6 +550,10 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
+  /*  <---инструкции переходов--->  */
+  transition-duration: 250ms;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-footer .social-link:hover,
 .social-footer .social-link:focus {
@@ -575,6 +574,11 @@ span {
 .portfolio .button {
   border: 1px solid #e7e9fc;
   padding: 12px 24px;
+  /*  <---инструкции переходов--->  */
+  transition-duration: 250ms;
+  transition-property: color, background-color, box-shadow, border-radius,
+    border;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio .button:hover,
 .portfolio .button:focus {
@@ -627,11 +631,22 @@ span {
   width: 100%;
   height: 100%;
   transform: translateY(+100%);
-  transition: transform 250ms ease;
   background-color: var(--primary-color);
+  /*  <---инструкции переходов--->  */
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .thumbs:hover .overlay {
   transform: translateY(0);
+}
+.desk.list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+  /*  <---инструкции переходов--->  */
+  transition-duration: 250ms;
+  transition-property: box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .desk.list .cards:hover {
   box-shadow: 0px 2px 1px 0px #2e2f4214, 0px 1px 1px 0px #2e2f4229,
@@ -662,3 +677,36 @@ h2.title-text {
 .desk.list .link {
   display: block;
 }
+
+/*  <----    модальное окно  ---->  */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 165, 0, 0.5);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.modal {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  min-height: 584px;
+  min-width: 408px;
+
+  transform: translate(-50%, -50%);
+  border-radius: 4px;
+  background-color: #e7e7ee;
+}
+
+.modal-icon {
+  background-color: var(--primary-color);
+  fill: var(--primary-bg-color);
+}
+/* ----------------------------------------- */
