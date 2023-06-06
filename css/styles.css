@@ -76,6 +76,8 @@ span {
   margin-right: 76px;
 }
 .flax-header .link {
+  color: #404bbf;
+
   position: relative;
   display: block;
   padding-top: 24px;
@@ -89,13 +91,13 @@ span {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
-}
-.adres-nav {
-  font-style: normal;
   /*  <---инструкции переходов--->  */
   transition-duration: 250ms;
   transition-property: color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.adres-nav {
+  font-style: normal;
 }
 .adres-nav .list .link {
   color: var(--text-color);
