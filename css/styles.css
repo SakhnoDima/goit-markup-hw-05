@@ -91,7 +91,7 @@ span {
   margin-right: 76px;
 }
 .flax-header .link {
-  /* color: #404bbf;    <----         непонятная ошибка!!!*/
+  color: #404bbf; /* <----         непонятная ошибка!!! */
 
   position: relative;
   display: block;
