@@ -664,7 +664,7 @@ span {
   transform: translateY(0);
 }
 /*                        < ----- выдает ошибку*/
-.thumbs:focus .overlay {
+.desk.list .link:focus .overlay {
   transform: translateY(0);
 }
 .desk.list {
