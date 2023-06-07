@@ -663,7 +663,7 @@ span {
 .thumbs:hover .overlay {
   transform: translateY(0);
 }
-/*                        < ----- выдает ошибку*/
+/* < ---- выдавал ошибку по фокусу ссылки а выше, по ховеру нет*/
 .desk.list .link:focus .overlay {
   transform: translateY(0);
 }
