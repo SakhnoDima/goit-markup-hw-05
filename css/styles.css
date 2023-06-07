@@ -405,6 +405,7 @@ span {
 .flax-header.list {
   display: flex;
 }
+/* всем кроме последнего */
 .flax-header.list .li-head:not(:last-child) {
   margin-right: 40px;
 }
@@ -415,7 +416,7 @@ span {
 .flax-section-one.list {
   display: flex;
 }
-
+/* только последнему */
 .contaier-one-title:last-child {
   margin-right: 0px;
 }
