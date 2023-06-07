@@ -660,7 +660,10 @@ span {
   /*  <---инструкции переходов--->  */
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.thumbs:hover .overlay,
+.thumbs:hover .overlay {
+  transform: translateY(0);
+}
+/*                        < ----- выдает ошибку*/
 .thumbs:focus .overlay {
   transform: translateY(0);
 }
