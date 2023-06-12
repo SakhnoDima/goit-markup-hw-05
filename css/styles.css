@@ -629,7 +629,7 @@ span {
   margin-left: 16px;
 }
 .text-portfolio {
-  margin-left: 16px;
+  margin: 0 0 0 16px;
   color: var(--text-color);
 }
 .portfolio .text-portfolio {
