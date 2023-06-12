@@ -44,7 +44,7 @@ span {
   color: var(--title-text-color);
 }
 .button-line {
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   top: 0;
   left: 0;
@@ -592,6 +592,9 @@ span {
 .portfolio-section {
   padding-top: 96px;
   padding-bottom: 120px;
+}
+.portfolio-section .portfolio.list {
+  padding-top: 0;
 }
 .portfolio-title {
   margin-top: 0;
